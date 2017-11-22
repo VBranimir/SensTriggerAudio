@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sleep 5 
-stty -F /dev/ttyACM0 115200 #change the baud rate 
+stty -F /dev/ttyACM0 115200 #set the baud rate 
 cd /home/pi 
 while true do
 	cat /dev/ttyACM0 | head -n 1 | while read LINE do
